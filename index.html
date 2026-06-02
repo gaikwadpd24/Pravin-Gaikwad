@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Pravin Gaikwad | Senior Analyst – 6+ years in IT Operations, Problem Management, Data Analytics. Microsoft Certified: Power BI & Azure Database Administrator.">
+  <title>Pravin Gaikwad | Senior Analyst – IT Operations & Problem Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f7fc;
+      color: #1e2a3e;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      border-left: 5px solid #0f52ba;
+      padding-left: 1rem;
+      margin-bottom: 1.8rem;
+      color: #0c2d4b;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-title i {
+      color: #0f52ba;
+      font-size: 1.6rem;
+    }
+    .card {
+      background: white;
+      border-radius: 24px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      padding: 1.5rem;
+      height: 100%;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.1);
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.8rem;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+    }
+    .hero {
+      background: linear-gradient(135deg, #ffffff 0%, #eef2f9 100%);
+      border-radius: 2rem;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+      border: 1px solid rgba(15,82,186,0.1);
+    }
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+    .profile-photo {
+      flex-shrink: 0;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      border: 3px solid white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .profile-photo:hover {
+      transform: scale(1.03);
+      box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15);
+    }
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero-text {
+      flex: 1;
+    }
+    .hero-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .name-title h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      background: linear-gradient(120deg, #0f2b3d, #1e4a76);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: -0.02em;
+    }
+    .badge {
+      background: #0f52ba10;
+      backdrop-filter: blur(4px);
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      font-weight: 500;
+      font-size: 0.85rem;
+      border: 1px solid #0f52ba30;
+      color: #0f52ba;
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin: 1rem 0 1rem;
+      font-size: 0.9rem;
+    }
+    .contact-info a, .contact-info span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .contact-info a:hover {
+      color: #0f52ba;
+    }
+    .summary {
+      background: #f0f4fa;
+      padding: 1rem 1.2rem;
+      border-radius: 1.2rem;
+      margin-top: 1rem;
+      font-weight: 500;
+      border-left: 3px solid #0f52ba;
+    }
+    .skill-tag {
+      display: inline-block;
+      background: #e9edf2;
+      padding: 0.3rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin: 0.25rem;
+      transition: all 0.2s;
+      color: #1f3a4b;
+    }
+    .skill-tag:hover {
+      background: #0f52ba;
+      color: white;
+      transform: scale(0.98);
+    }
+    .exp-item {
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+    .exp-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .exp-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.5rem;
+    }
+    .exp-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #0c2d4b;
+    }
+    .exp-company {
+      font-weight: 600;
+      color: #2c5282;
+    }
+    .exp-date {
+      font-size: 0.8rem;
+      background: #eef2ff;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+    .exp-desc {
+      font-size: 0.9rem;
+      color: #2d3e50;
+      margin-top: 0.5rem;
+      line-height: 1.5;
+    }
+    .exp-desc ul {
+      padding-left: 1rem;
+      margin-top: 0.3rem;
+    }
+    .exp-desc li {
+      margin-bottom: 0.3rem;
+    }
+    .cert-badge-img {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border: 1px solid #e9edf2;
+    }
+    .cert-badge-img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 15px 25px -10px rgba(0,0,0,0.1);
+    }
+    .cert-badge-img img {
+      max-width: 100%;
+      height: auto;
+      max-height: 150px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
+    .project-card {
+      background: #ffffff;
+      border-radius: 1.2rem;
+      padding: 1.2rem;
+      border: 1px solid #e2edf7;
+    }
+    .edu-card {
+      background: #ffffff;
+      padding: 1.2rem;
+      border-radius: 1rem;
+      border-left: 4px solid #0f52ba;
+      margin-bottom: 1rem;
+    }
+    .edu-degree {
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+    .edu-marks {
+      font-weight: 600;
+      color: #0f52ba;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 0 1rem;
+      border-top: 1px solid #cbd5e1;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #4b5563;
+    }
+    @media (max-width: 680px) {
+      .container {
+        padding: 1rem;
+      }
+      .hero {
+        padding: 1.5rem;
+      }
+      .name-title h1 {
+        font-size: 1.8rem;
+      }
+      .section-title {
+        font-size: 1.5rem;
+      }
+      .profile-photo {
+        width: 100px;
+        height: 100px;
+      }
+      .hero-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-top {
+        justify-content: center;
+      }
+      .contact-info {
+        justify-content: center;
+      }
+    }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      border: 1.5px solid #0f52ba;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      font-weight: 600;
+      color: #0f52ba;
+      transition: 0.2s;
+      text-decoration: none;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+    .btn-outline:hover {
+      background: #0f52ba;
+      color: white;
+    }
+    .stats-mini {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      margin: 1rem 0 0;
+    }
+    .stat {
+      background: white;
+      border-radius: 2rem;
+      padding: 0.3rem 1rem;
+      font-weight: 600;
+      font-size: 0.8rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+    .soft-skill {
+      background: #f8fafc;
+      padding: 0.5rem 1rem;
+      border-radius: 40px;
+      display: inline-block;
+      font-weight: 500;
+      font-size: 0.85rem;
+      margin: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- Hero Section with Profile Photo -->
+  <div class="hero">
+    <div class="hero-content">
+      <!-- Profile Photo -->
+      <div class="profile-photo">
+        <img src="profile.jpg" alt="Pravin Gaikwad" onerror="this.onerror=null; this.src='https://placehold.co/400x400?text=📸+Your+Photo'">
+      </div>
+      <div class="hero-text">
+        <div class="hero-top">
+          <div class="name-title">
+            <h1>Pravin Dashrath Gaikwad</h1>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px;">
+              <span class="badge"><i class="fas fa-chart-line"></i> Senior Analyst</span>
+              <span class="badge"><i class="fas fa-briefcase"></i> 6+ Years Exp</span>
+              <span class="badge"><i class="fas fa-map-marker-alt"></i> Pune, India</span>
+            </div>
+          </div>
+          <div>
+            <a href="#contact" class="btn-outline"><i class="fas fa-paper-plane"></i> Hire Me</a>
+          </div>
+        </div>
+        <div class="contact-info">
+          <a href="tel:+918177816241"><i class="fas fa-phone-alt"></i> +91-8177816241</a>
+          <a href="mailto:gaikwadpd24@gmail.com"><i class="fas fa-envelope"></i> gaikwadpd24@gmail.com</a>
+          <a href="https://www.linkedin.com/in/pravin-gaikwad-1aa158193" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+          <span><i class="fas fa-map-pin"></i> Pune, INDIA</span>
+        </div>
+        <div class="summary">
+          <i class="fas fa-quote-left" style="margin-right: 8px; color:#0f52ba;"></i> 
+          Strategic IT professional with 6+ years in incident, problem, and data analytics management. Proven expertise in root cause analysis, problem lifecycle, and preventive measures. Adept in ITIL processes, stakeholder communication, and CSI. Strong technical foundation in data platforms (SQL, Azure), visualization (Power BI, Tableau), and IT infrastructure (Active Directory, Intune, O365).
+        </div>
+        <div class="stats-mini">
+          <div class="stat"><i class="fas fa-trophy"></i> 2x Microsoft Certified</div>
+          <div class="stat"><i class="fas fa-database"></i> Azure DB & Power BI</div>
+          <div class="stat"><i class="fas fa-chart-pie"></i> Problem Management Lead</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS SECTION -->
+  <section>
+    <div class="section-title">
+      <h2>Technical Arsenal & Core Competencies</h2>
+    </div>
+    <div class="card" style="padding: 1.2rem;">
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+        <span class="skill-tag">Problem Management (ITIL)</span>
+        <span class="skill-tag">Incident Management</span>
+        <span class="skill-tag">Major Incident Handling & RCA</span>
+        <span class="skill-tag">Root Cause Analysis</span>
+        <span class="skill-tag">Continual Service Improvement (CSI)</span>
+        <span class="skill-tag">IT Asset Management</span>
+        <span class="skill-tag">ServiceNow – Incident/Problem</span>
+        <span class="skill-tag">SLA Management & Communication</span>
+        <span class="skill-tag">Cross-functional Collaboration</span>
+        <span class="skill-tag">KPI Reporting & Trend Analysis</span>
+        <span class="skill-tag">Tableau, Power BI & Excel Dashboards</span>
+        <span class="skill-tag">SQL Server & Azure SQL DBA</span>
+        <span class="skill-tag">Python (Pandas, NumPy)</span>
+        <span class="skill-tag">MATLAB</span>
+        <span class="skill-tag">Windows & Server OS (2012-2019)</span>
+        <span class="skill-tag">Active Directory / Azure AD</span>
+        <span class="skill-tag">Microsoft Intune / MDM</span>
+        <span class="skill-tag">Exchange Online / Office 365</span>
+        <span class="skill-tag">Virtual Desktop Infrastructure</span>
+        <span class="skill-tag">Endpoint Security</span>
+        <span class="skill-tag">Change & Escalation Management</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK EXPERIENCE -->
+  <section>
+    <div class="section-title">
+      <i class="fas fa-briefcase"></i>
+      <h2>Professional Journey</h2>
+    </div>
+    <div class="card">
+      <div class="exp-item">
+        <div class="exp-header"><div><span class="exp-title">Senior Analyst</span> <span class="exp-company"> @ HCL Technologies Ltd</span></div><div class="exp-date">Jan 2022 – Present</div></div>
+        <div class="exp-desc"><ul><li>Lead end-to-end Problem Management lifecycle ensuring timely root cause identification and resolution.</li><li>Analyze incident trends, conduct RCA workshops, and facilitate problem review meetings.</li><li>Implement preventive solutions – reduced recurring major incidents by 20% year-over-year.</li><li>Maintain known error records, workarounds, and documentation within ServiceNow.</li><li>Collaborate with Incident, Change, and Infrastructure teams to align preventive and corrective actions.</li><li>Prepare KPI dashboards, trend analysis reports, and management presentations using Power BI and Excel.</li><li>Conduct impact assessments and manage stakeholder communication during critical incidents.</li><li>Support IT asset tracking, reporting, and lifecycle management for operational compliance.</li></ul></div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-header"><div><span class="exp-title">Desktop Support Engineer</span> <span class="exp-company"> @ IMSI Staffing Pvt Ltd</span></div><div class="exp-date">Apr 2019 – Oct 2021</div></div>
+        <div class="exp-desc"><ul><li>Provided Level 1/2 IT support and managed high-priority incidents.</li><li>Collaborated with infrastructure teams to escalate and resolve issues.</li><li>Maintained tickets and ensured SLA compliance; performed system installations, AD management.</li></ul></div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-header"><div><span class="exp-title">System Administrator</span> <span class="exp-company"> @ S.M. Joshi College</span></div><div class="exp-date">May 2018 – Apr 2019</div></div>
+        <div class="exp-desc"><ul><li>Administered campus IT infrastructure: Windows Server, Active Directory, firewall config, network troubleshooting.</li><li>Provided technical support, system monitoring, and ensured smooth IT operations.</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATION BADGES -->
+  <section>
+    <div class="section-title"><i class="fab fa-microsoft"></i><h2>Microsoft Certifications – Official Badges</h2></div>
+    <div class="grid-2">
+      <div class="cert-badge-img"><img src="powerbi-cert.png" alt="Power BI" onerror="this.src='https://placehold.co/300x150?text=Power+BI+Badge';"><p style="margin-top:8px; font-weight:500;">PL-300: Power BI Data Analyst Associate</p></div>
+      <div class="cert-badge-img"><img src="azure-cert.png" alt="Azure DB" onerror="this.src='https://placehold.co/300x150?text=Azure+DB+Badge';"><p style="margin-top:8px; font-weight:500;">DP-300: Azure Database Administrator Associate</p></div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <div class="section-title"><i class="fas fa-graduation-cap"></i><h2>Academic Excellence & Credentials</h2></div>
+    <div class="grid-2">
+      <div class="card"><div class="edu-card"><div class="edu-degree"><i class="fas fa-university"></i> MBA / PGDM – Operations Management</div><div>Savitribai Phule Pune University</div><div class="edu-marks">🏆 Marks: 70.8% | First Division</div><div style="font-size:0.85rem; margin-top:8px;">2022</div></div><div class="edu-card"><div class="edu-degree"><i class="fas fa-laptop-code"></i> BCA / BBA(CA) – Computer Applications</div><div>Savitribai Phule Pune University</div><div class="edu-marks">🎓 Marks: 62.42%</div><div style="font-size:0.85rem; margin-top:8px;">2018</div></div></div>
+      <div class="card"><h3 style="font-weight:700; margin-bottom:1rem;"><i class="fas fa-id-card"></i> Additional Information</h3><div><i class="fas fa-language"></i> <strong>Languages:</strong> Marathi, English, Hindi</div><hr style="margin:1rem 0;"><div><i class="fas fa-tasks"></i> <strong>ITSM:</strong> ServiceNow, Power BI, SQL, Major Incident Management</div><div style="margin-top:1rem;"><i class="fas fa-certificate"></i> <strong>Microsoft Certified:</strong> Azure Database Administrator & Power BI Data Analyst</div></div>
+    </div>
+  </section>
+
+  <!-- SOFT SKILLS -->
+  <section><div class="section-title"><i class="fas fa-heart"></i><h2>Soft Skills</h2></div><div class="card" style="text-align:center;"><div><span class="soft-skill">🧠 Analytical thinker & process improvement mindset</span><span class="soft-skill">🗣️ Strong communication & stakeholder engagement</span><span class="soft-skill">🤝 Collaborative team leader & mentor</span><span class="soft-skill">⚡ Adaptable to evolving technology landscapes</span></div></div></section>
+
+  <!-- PROJECTS -->
+  <section><div class="section-title"><i class="fas fa-microchip"></i><h2>Key Projects & Technical Contributions</h2></div><div class="grid-2"><div class="project-card"><i class="fas fa-database" style="font-size:1.8rem; color:#0f52ba;"></i><h3>GIT-BITS-INFRA (SQL & IAM)</h3><ul><li>Created/modified SQL queries, stored procedures, jobs.</li><li>Managed master data, implemented IAM.</li><li>Monitored log shipping, replication.</li><li>Installed/configured SQL Server.</li></ul></div><div class="project-card"><i class="fas fa-chart-line" style="font-size:1.8rem; color:#0f52ba;"></i><h3>Problem Management Intelligence Hub</h3><ul><li>Built Power BI dashboards & RCA reports.</li><li>Collaborated with Incident/Change teams.</li><li>Enhanced known error database.</li></ul></div></div></section>
+
+  <!-- INFRASTRUCTURE & SECURITY -->
+  <section><div class="section-title"><i class="fas fa-shield-alt"></i><h2>Infrastructure & Security Excellence</h2></div><div class="grid-3"><div class="card"><i class="fas fa-users-cog"></i><h3>Identity & Access Mgmt</h3><p>Active Directory, Azure AD, IAM, Intune MDM.</p></div><div class="card"><i class="fas fa-chalkboard-teacher"></i><h3>Major Incident & Escalation</h3><p>Led bridges, stakeholder communication.</p></div><div class="card"><i class="fas fa-chart-simple"></i><h3>Data Driven IT Ops</h3><p>Power BI, SQL analytics.</p></div></div></section>
+
+  <!-- CONTACT SECTION (no extra download buttons) -->
+  <section id="contact">
+    <div class="section-title"><i class="fas fa-paper-plane"></i><h2>Let’s Connect – Open to Opportunities</h2></div>
+    <div class="card" style="text-align:center; background:linear-gradient(115deg,#ffffff,#f9fcff);">
+      <p style="margin-bottom:1rem;">🚀 Passionate about IT Operations, Problem Management & Infrastructure excellence.</p>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;">
+        <a href="mailto:gaikwadpd24@gmail.com" class="btn-outline" style="background:#0f52ba; color:white; border:none;"><i class="fas fa-envelope"></i> gaikwadpd24@gmail.com</a>
+        <a href="tel:+918177816241" class="btn-outline"><i class="fas fa-phone-alt"></i> +91-8177816241</a>
+        <a href="https://www.linkedin.com/in/pravin-gaikwad-1aa158193" target="_blank" class="btn-outline"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
+      </div>
+      <div style="margin-top:1.2rem;">
+        <i class="fas fa-map-marker-alt"></i> Pune, India | Open for remote/hybrid/onsite roles.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Pravin Gaikwad – Professional portfolio. Ready to drive impact.</p>
+  </footer>
+</div>
+</body>
+</html>
