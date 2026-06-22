@@ -1,485 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Pravin Gaikwad | Senior Analyst – 6+ years in IT Operations, Problem Management, Data Analytics. Microsoft Certified: Power BI & Azure Database Administrator.">
-  <title>Pravin Gaikwad | Senior Analyst – IT Operations & Problem Management</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f4f7fc;
-      color: #1e2a3e;
-      line-height: 1.5;
-      scroll-behavior: smooth;
-    }
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    .section-title {
-      font-size: 1.8rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      border-left: 5px solid #0f52ba;
-      padding-left: 1rem;
-      margin-bottom: 1.8rem;
-      color: #0c2d4b;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .section-title i {
-      color: #0f52ba;
-      font-size: 1.6rem;
-    }
-    .card {
-      background: white;
-      border-radius: 24px;
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      padding: 1.5rem;
-      height: 100%;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.1);
-    }
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.8rem;
-    }
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.8rem;
-    }
-    .hero {
-      background: linear-gradient(135deg, #ffffff 0%, #eef2f9 100%);
-      border-radius: 2rem;
-      padding: 2rem;
-      margin-bottom: 2.5rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.02);
-      border: 1px solid rgba(15,82,186,0.1);
-    }
-    .hero-content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      align-items: center;
-    }
-    .profile-photo {
-      flex-shrink: 0;
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      overflow: hidden;
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-      border: 3px solid white;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .profile-photo:hover {
-      transform: scale(1.03);
-      box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15);
-    }
-    .profile-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .hero-text {
-      flex: 1;
-    }
-    .hero-top {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
-    .name-title h1 {
-      font-size: 2.6rem;
-      font-weight: 800;
-      background: linear-gradient(120deg, #0f2b3d, #1e4a76);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      letter-spacing: -0.02em;
-    }
-    .badge {
-      background: #0f52ba10;
-      backdrop-filter: blur(4px);
-      padding: 0.4rem 1rem;
-      border-radius: 40px;
-      font-weight: 500;
-      font-size: 0.85rem;
-      border: 1px solid #0f52ba30;
-      color: #0f52ba;
-    }
-    .contact-info {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.2rem;
-      margin: 1rem 0 1rem;
-      font-size: 0.9rem;
-    }
-    .contact-info a, .contact-info span {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #2c3e50;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    .contact-info a:hover {
-      color: #0f52ba;
-    }
-    .summary {
-      background: #f0f4fa;
-      padding: 1rem 1.2rem;
-      border-radius: 1.2rem;
-      margin-top: 1rem;
-      font-weight: 500;
-      border-left: 3px solid #0f52ba;
-    }
-    .skill-tag {
-      display: inline-block;
-      background: #e9edf2;
-      padding: 0.3rem 0.9rem;
-      border-radius: 30px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      margin: 0.25rem;
-      transition: all 0.2s;
-      color: #1f3a4b;
-    }
-    .skill-tag:hover {
-      background: #0f52ba;
-      color: white;
-      transform: scale(0.98);
-    }
-    .exp-item {
-      border-bottom: 1px solid #e2e8f0;
-      padding-bottom: 1.2rem;
-      margin-bottom: 1.2rem;
-    }
-    .exp-item:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    .exp-header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 0.5rem;
-    }
-    .exp-title {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #0c2d4b;
-    }
-    .exp-company {
-      font-weight: 600;
-      color: #2c5282;
-    }
-    .exp-date {
-      font-size: 0.8rem;
-      background: #eef2ff;
-      padding: 0.2rem 0.7rem;
-      border-radius: 20px;
-      font-weight: 500;
-    }
-    .exp-desc {
-      font-size: 0.9rem;
-      color: #2d3e50;
-      margin-top: 0.5rem;
-      line-height: 1.5;
-    }
-    .exp-desc ul {
-      padding-left: 1rem;
-      margin-top: 0.3rem;
-    }
-    .exp-desc li {
-      margin-bottom: 0.3rem;
-    }
-    .cert-badge-img {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 1rem;
-      text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      border: 1px solid #e9edf2;
-    }
-    .cert-badge-img:hover {
-      transform: scale(1.02);
-      box-shadow: 0 15px 25px -10px rgba(0,0,0,0.1);
-    }
-    .cert-badge-img img {
-      max-width: 100%;
-      height: auto;
-      max-height: 150px;
-      object-fit: contain;
-      margin-bottom: 0.5rem;
-    }
-    .project-card {
-      background: #ffffff;
-      border-radius: 1.2rem;
-      padding: 1.2rem;
-      border: 1px solid #e2edf7;
-    }
-    .edu-card {
-      background: #ffffff;
-      padding: 1.2rem;
-      border-radius: 1rem;
-      border-left: 4px solid #0f52ba;
-      margin-bottom: 1rem;
-    }
-    .edu-degree {
-      font-weight: 800;
-      font-size: 1.1rem;
-    }
-    .edu-marks {
-      font-weight: 600;
-      color: #0f52ba;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem 0 1rem;
-      border-top: 1px solid #cbd5e1;
-      margin-top: 2rem;
-      font-size: 0.8rem;
-      color: #4b5563;
-    }
-    @media (max-width: 680px) {
-      .container {
-        padding: 1rem;
-      }
-      .hero {
-        padding: 1.5rem;
-      }
-      .name-title h1 {
-        font-size: 1.8rem;
-      }
-      .section-title {
-        font-size: 1.5rem;
-      }
-      .profile-photo {
-        width: 100px;
-        height: 100px;
-      }
-      .hero-content {
-        flex-direction: column;
-        text-align: center;
-      }
-      .hero-top {
-        justify-content: center;
-      }
-      .contact-info {
-        justify-content: center;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- ===== PRIMARY SEO META TAGS ===== -->
+    <title>Pravin Gaikwad | Senior Analyst | Power BI | Azure Certified</title>
+    <meta name="description" content="Senior Analyst with 6+ years in Problem Management, IT Operations, and Data Analytics. 2x Microsoft Certified: Power BI & Azure Database Administrator. View portfolio, projects & certifications.">
+    <meta name="keywords" content="Senior Analyst, Problem Management, IT Operations, Root Cause Analysis, ITIL, ServiceNow, Power BI, Azure, SQL Server, Active Directory, Intune, Office 365, Tableau, Data Analytics, Microsoft Certified, Pune, India">
+    <meta name="author" content="Pravin Gaikwad">
+    <meta name="robots" content="index, follow">
+
+    <!-- ===== OPEN GRAPH (OG) TAGS FOR SOCIAL MEDIA ===== -->
+    <meta property="og:title" content="Pravin Gaikwad | Senior Analyst | Power BI | Azure Certified">
+    <meta property="og:description" content="Senior Analyst with 6+ years in IT Operations, Problem Management, and Data Analytics. Microsoft Certified: Power BI & Azure Database Administrator. View my portfolio, projects, and certifications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://praving.com/">
+    <meta property="og:image" content="https://praving.com/og-image.jpg">
+
+    <!-- ===== TWITTER CARD TAGS ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pravin Gaikwad | Senior Analyst | Power BI | Azure Certified">
+    <meta name="twitter:description" content="Senior Analyst with 6+ years in IT Operations, Problem Management, and Data Analytics. Microsoft Certified: Power BI & Azure Database Administrator.">
+    <meta name="twitter:image" content="https://praving.com/og-image.jpg">
+
+    <!-- ===== CANONICAL URL ===== -->
+    <link rel="canonical" href="https://praving.com/">
+
+    <!-- ===== SCHEMA MARKUP (Structured Data) ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Pravin Gaikwad",
+      "jobTitle": "Senior Analyst",
+      "url": "https://praving.com/",
+      "sameAs": [
+        "https://www.linkedin.com/in/pravin-gaikwad-1aa158193"
+      ],
+      "knowsAbout": [
+        "Problem Management",
+        "IT Operations",
+        "Data Analytics",
+        "Power BI",
+        "Azure Database Administration",
+        "ITIL",
+        "Root Cause Analysis",
+        "SQL Server",
+        "Active Directory"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "HCL Technologies"
       }
     }
-    .btn-outline {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: transparent;
-      border: 1.5px solid #0f52ba;
-      padding: 0.4rem 1rem;
-      border-radius: 40px;
-      font-weight: 600;
-      color: #0f52ba;
-      transition: 0.2s;
-      text-decoration: none;
-      font-size: 0.8rem;
-      cursor: pointer;
-    }
-    .btn-outline:hover {
-      background: #0f52ba;
-      color: white;
-    }
-    .stats-mini {
-      display: flex;
-      gap: 1.2rem;
-      flex-wrap: wrap;
-      margin: 1rem 0 0;
-    }
-    .stat {
-      background: white;
-      border-radius: 2rem;
-      padding: 0.3rem 1rem;
-      font-weight: 600;
-      font-size: 0.8rem;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-    }
-    .soft-skill {
-      background: #f8fafc;
-      padding: 0.5rem 1rem;
-      border-radius: 40px;
-      display: inline-block;
-      font-weight: 500;
-      font-size: 0.85rem;
-      margin: 0.25rem;
-    }
-  </style>
+    </script>
+
+    <!-- ===== FONTS & ICONS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f1f5f9;
+            color: #0f172a;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 2rem auto;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            padding: 1.5rem 2rem;
+            color: white;
+            border-radius: 28px 28px 0 0;
+        }
+
+        .header-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .name-title h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.2rem;
+        }
+
+        .name-title .tagline {
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .badge-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            align-items: center;
+        }
+
+        .availability-badge, .cert-badge-header {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(4px);
+            padding: 0.4rem 0.9rem;
+            border-radius: 60px;
+            font-size: 0.75rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .cert-badge-header i {
+            color: #ffc107;
+        }
+
+        .contact-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.5rem;
+            font-size: 0.75rem;
+        }
+
+        .contact-strip a, .contact-strip span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-strip a:hover {
+            color: #38bdf8;
+        }
+
+        .tabs-nav {
+            display: flex;
+            flex-wrap: wrap;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 0 1.5rem;
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: none;
+            padding: 0.8rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #475569;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .tab-btn i {
+            font-size: 0.9rem;
+        }
+
+        .tab-btn:hover {
+            color: #0f52ba;
+            background: #f1f5f9;
+        }
+
+        .tab-btn.active {
+            color: #0f52ba;
+            border-bottom-color: #0f52ba;
+        }
+
+        .tab-content {
+            padding: 2rem;
+        }
+
+        .tab-pane {
+            display: none;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .tab-pane.active-pane {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            border-left: 4px solid #0f52ba;
+            padding-left: 0.8rem;
+            color: #0f172a;
+        }
+
+        .summary-card {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            line-height: 1.7;
+            color: #334155;
+            font-size: 0.9rem;
+        }
+
+        .skills-section {
+            margin-bottom: 1.5rem;
+        }
+        .skills-subtitle {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0f52ba;
+            margin-bottom: 0.8rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 2px solid #e2e8f0;
+            display: inline-block;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+            gap: 0.6rem;
+            margin-bottom: 1.2rem;
+        }
+        .skill-tag {
+            background: #f1f5f9;
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #0f172a;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .skill-tag:hover {
+            background: #0f52ba;
+            color: white;
+            transform: translateY(-2px);
+            border-color: #0f52ba;
+        }
+
+        .exp-item, .edu-item, .cert-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 16px;
+            margin-bottom: 1rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .exp-header, .edu-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.4rem;
+        }
+
+        .exp-title, .edu-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .exp-company, .edu-institution {
+            font-weight: 600;
+            color: #0f52ba;
+        }
+
+        .exp-date, .edu-date {
+            font-size: 0.65rem;
+            background: #f1f5f9;
+            padding: 0.2rem 0.6rem;
+            border-radius: 30px;
+            font-weight: 500;
+            color: #475569;
+        }
+
+        .exp-desc {
+            color: #475569;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            margin-top: 0.3rem;
+        }
+
+        .exp-desc ul {
+            padding-left: 1rem;
+            margin-top: 0.2rem;
+        }
+
+        .cert-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .cert-badge-img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+        }
+
+        .cert-title {
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .cert-detail {
+            font-size: 0.7rem;
+            color: #64748b;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+        }
+
+        .project-card {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .project-card h3 {
+            font-size: 0.9rem;
+            margin: 0.6rem 0 0.4rem;
+        }
+
+        .project-card i {
+            font-size: 1.4rem;
+            color: #0f52ba;
+        }
+
+        .wall-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1rem;
+        }
+
+        .wall-card {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+        }
+
+        .wall-icon {
+            font-size: 1.6rem;
+            color: #0f52ba;
+            margin-bottom: 0.5rem;
+        }
+
+        .wall-title {
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .wall-desc {
+            font-size: 0.75rem;
+            color: #475569;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 1rem 0;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: white;
+            border: 1.5px solid #0f52ba;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: #0f52ba;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: #0f52ba;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.75rem;
+            color: #64748b;
+            background: white;
+            border-radius: 0 0 28px 28px;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                margin: 1rem;
+                border-radius: 20px;
+            }
+            .header {
+                padding: 1rem;
+                border-radius: 20px 20px 0 0;
+            }
+            .name-title h1 {
+                font-size: 1.4rem;
+            }
+            .tabs-nav {
+                padding: 0 0.5rem;
+                overflow-x: auto;
+                white-space: nowrap;
+                flex-wrap: nowrap;
+            }
+            .tab-btn {
+                padding: 0.6rem 0.8rem;
+                font-size: 0.75rem;
+            }
+            .tab-content {
+                padding: 1rem;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+            }
+            .skill-tag {
+                white-space: normal;
+                text-align: center;
+                font-size: 0.7rem;
+                padding: 0.3rem 0.7rem;
+            }
+        }
+    </style>
 </head>
 <body>
 <div class="container">
-  <!-- Hero Section with Profile Photo -->
-  <div class="hero">
-    <div class="hero-content">
-      <!-- Profile Photo -->
-      <div class="profile-photo">
-        <img src="profile.jpg" alt="Pravin Gaikwad" onerror="this.onerror=null; this.src='https://placehold.co/400x400?text=📸+Your+Photo'">
-      </div>
-      <div class="hero-text">
-        <div class="hero-top">
-          <div class="name-title">
-            <h1>Pravin Dashrath Gaikwad</h1>
-            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px;">
-              <span class="badge"><i class="fas fa-chart-line"></i> Senior Analyst</span>
-              <span class="badge"><i class="fas fa-briefcase"></i> 6+ Years Exp</span>
-              <span class="badge"><i class="fas fa-map-marker-alt"></i> Pune, India</span>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <div class="name-title">
+                <h1>Pravin Gaikwad – Senior Analyst | Problem Management | IT Operations</h1>
+                <div class="tagline">Senior Analyst | Problem Management | IT Operations</div>
+                <div class="contact-strip">
+                    <a href="tel:+918177816241"><i class="fas fa-phone-alt"></i> +91-8177816241</a>
+                    <a href="mailto:gaikwadpd24@gmail.com"><i class="fas fa-envelope"></i> gaikwadpd24@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/pravin-gaikwad-1aa158193" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <span><i class="fas fa-map-marker-alt"></i> Pune, India</span>
+                </div>
             </div>
-          </div>
-          <div>
-            <a href="#contact" class="btn-outline"><i class="fas fa-paper-plane"></i> Hire Me</a>
-          </div>
+            <div class="badge-group">
+                <div class="availability-badge"><i class="fas fa-bolt"></i> Immediate | 6+ Years</div>
+                <div class="cert-badge-header"><i class="fas fa-certificate"></i> 2x Microsoft Certified</div>
+            </div>
         </div>
-        <div class="contact-info">
-          <a href="tel:+918177816241"><i class="fas fa-phone-alt"></i> +91-8177816241</a>
-          <a href="mailto:gaikwadpd24@gmail.com"><i class="fas fa-envelope"></i> gaikwadpd24@gmail.com</a>
-          <a href="https://www.linkedin.com/in/pravin-gaikwad-1aa158193" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
-          <span><i class="fas fa-map-pin"></i> Pune, INDIA</span>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="about"><i class="fas fa-user"></i> About</button>
+        <button class="tab-btn" data-tab="skills"><i class="fas fa-code"></i> Skills</button>
+        <button class="tab-btn" data-tab="experience"><i class="fas fa-briefcase"></i> Experience</button>
+        <button class="tab-btn" data-tab="certifications"><i class="fab fa-microsoft"></i> Certifications</button>
+        <button class="tab-btn" data-tab="education"><i class="fas fa-graduation-cap"></i> Education</button>
+        <button class="tab-btn" data-tab="projects"><i class="fas fa-microchip"></i> Projects</button>
+        <button class="tab-btn" data-tab="wall"><i class="fas fa-th-large"></i> Wall</button>
+        <button class="tab-btn" data-tab="contact"><i class="fas fa-paper-plane"></i> Contact</button>
+    </div>
+
+    <div class="tab-content">
+        <!-- About Tab - SEO Optimized -->
+        <div class="tab-pane active-pane" id="about">
+            <div class="section-title"><i class="fas fa-user"></i> About Me</div>
+            <div class="summary-card">
+                Strategic IT professional with <strong>6+ years of experience</strong> in <strong>incident management, problem management, and data analytics</strong>. Proven expertise in <strong>root cause analysis (RCA)</strong>, problem lifecycle, and preventive measures. Adept in <strong>ITIL processes</strong>, stakeholder communication, and continual service improvement (CSI). Strong technical foundation in data platforms (<strong>SQL, Azure</strong>), visualization tools (<strong>Power BI, Tableau</strong>), and IT infrastructure (<strong>Active Directory, Intune, Office 365</strong>). <strong>2x Microsoft Certified</strong> (Power BI Data Analyst & Azure Database Administrator).
+            </div>
+            <div class="summary-card" style="margin-top: 0.8rem;">
+                <i class="fas fa-chart-line" style="color: #0f52ba; margin-right: 0.5rem;"></i> <strong>Key Impact:</strong> Reduced recurring major incidents by 20% YoY, built automated Power BI dashboards for RCA trends, led cross-functional problem review meetings.
+            </div>
         </div>
-        <div class="summary">
-          <i class="fas fa-quote-left" style="margin-right: 8px; color:#0f52ba;"></i> 
-          Strategic IT professional with 6+ years in incident, problem, and data analytics management. Proven expertise in root cause analysis, problem lifecycle, and preventive measures. Adept in ITIL processes, stakeholder communication, and CSI. Strong technical foundation in data platforms (SQL, Azure), visualization (Power BI, Tableau), and IT infrastructure (Active Directory, Intune, O365).
+
+        <!-- Skills Tab -->
+        <div class="tab-pane" id="skills">
+            <div class="section-title"><i class="fas fa-code"></i> Technical Arsenal & Core Competencies</div>
+            <div class="skills-section">
+                <div class="skills-subtitle"><i class="fas fa-tasks"></i> IT Service Management</div>
+                <div class="skills-grid">
+                    <span class="skill-tag">Problem Management (ITIL)</span>
+                    <span class="skill-tag">Incident Management</span>
+                    <span class="skill-tag">Major Incident Handling & RCA</span>
+                    <span class="skill-tag">Root Cause Analysis</span>
+                    <span class="skill-tag">Continual Service Improvement (CSI)</span>
+                    <span class="skill-tag">IT Asset Management</span>
+                    <span class="skill-tag">ServiceNow – Incident/Problem</span>
+                    <span class="skill-tag">SLA Management</span>
+                    <span class="skill-tag">Change & Escalation Management</span>
+                    <span class="skill-tag">Vendor Management</span>
+                    <span class="skill-tag">Stakeholder Management</span>
+                </div>
+            </div>
+            <div class="skills-section">
+                <div class="skills-subtitle"><i class="fas fa-chart-line"></i> Data & Analytics</div>
+                <div class="skills-grid">
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">Excel Dashboards</span>
+                    <span class="skill-tag">KPI Reporting & Trend Analysis</span>
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">Azure SQL DBA</span>
+                    <span class="skill-tag">Python (Pandas, NumPy)</span>
+                    <span class="skill-tag">MATLAB</span>
+                </div>
+            </div>
+            <div class="skills-section">
+                <div class="skills-subtitle"><i class="fas fa-shield-alt"></i> Infrastructure & Security</div>
+                <div class="skills-grid">
+                    <span class="skill-tag">Active Directory / Azure AD</span>
+                    <span class="skill-tag">Microsoft Intune / MDM</span>
+                    <span class="skill-tag">Exchange Online / Office 365</span>
+                    <span class="skill-tag">Virtual Desktop Infrastructure (VDI)</span>
+                    <span class="skill-tag">Endpoint Security</span>
+                    <span class="skill-tag">Windows & Server OS (2012-2019)</span>
+                </div>
+            </div>
+            <div class="skills-section">
+                <div class="skills-subtitle"><i class="fas fa-tools"></i> Other Competencies</div>
+                <div class="skills-grid">
+                    <span class="skill-tag">Cross-functional Collaboration</span>
+                    <span class="skill-tag">IT Operations Management</span>
+                </div>
+            </div>
         </div>
-        <div class="stats-mini">
-          <div class="stat"><i class="fas fa-trophy"></i> 2x Microsoft Certified</div>
-          <div class="stat"><i class="fas fa-database"></i> Azure DB & Power BI</div>
-          <div class="stat"><i class="fas fa-chart-pie"></i> Problem Management Lead</div>
+
+        <!-- Experience Tab -->
+        <div class="tab-pane" id="experience">
+            <div class="section-title"><i class="fas fa-briefcase"></i> Professional Journey</div>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div><span class="exp-title">Senior Analyst</span> <span class="exp-company">@ HCL Technologies</span></div>
+                    <div class="exp-date">Jan 2022 – Present</div>
+                </div>
+                <div class="exp-desc"><ul><li>Lead end-to-end Problem Management lifecycle – RCA, trend analysis, 20% YoY incident reduction.</li><li>Maintain known error records in ServiceNow, prepare Power BI dashboards and management presentations.</li><li>Collaborate with Incident, Change, and Infrastructure teams for CSI.</li><li>IT asset tracking, lifecycle management, operational compliance.</li></ul></div>
+            </div>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div><span class="exp-title">Desktop Support Engineer</span> <span class="exp-company">@ IMSI Staffing</span></div>
+                    <div class="exp-date">Apr 2019 – Oct 2021</div>
+                </div>
+                <div class="exp-desc"><ul><li>L1/L2 support, SLA compliance, Active Directory, system installations, application deployment.</li></ul></div>
+            </div>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <div><span class="exp-title">System Administrator</span> <span class="exp-company">@ S.M. Joshi College</span></div>
+                    <div class="exp-date">May 2018 – Apr 2019</div>
+                </div>
+                <div class="exp-desc"><ul><li>Windows Server, firewall, network troubleshooting, user support, system monitoring.</li></ul></div>
+            </div>
         </div>
-      </div>
+
+        <!-- Certifications Tab -->
+        <div class="tab-pane" id="certifications">
+            <div class="section-title"><i class="fab fa-microsoft"></i> Microsoft Certifications (2x)</div>
+            <div class="cert-item">
+                <div class="cert-badge">
+                    <img src="powerbi-cert.png" class="cert-badge-img" alt="Microsoft Certified Power BI Data Analyst Associate" onerror="this.src='https://placehold.co/60x60?text=Power+BI'">
+                    <div><div class="cert-title">Power BI Data Analyst Associate</div><div class="cert-detail">PL-300 | DAX, Power Query, dashboards</div></div>
+                </div>
+                <div class="cert-badge">
+                    <img src="azure-cert.png" class="cert-badge-img" alt="Microsoft Certified Azure Database Administrator Associate" onerror="this.src='https://placehold.co/60x60?text=Azure+DB'">
+                    <div><div class="cert-title">Azure Database Administrator Associate</div><div class="cert-detail">DP-300 | Azure SQL, security, tuning</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Tab -->
+        <div class="tab-pane" id="education">
+            <div class="section-title"><i class="fas fa-graduation-cap"></i> Academic Excellence</div>
+            <div class="edu-item">
+                <div class="exp-header"><div><span class="exp-title">MBA / PGDM – Operations Management</span> <span class="exp-company">SPPU</span></div><div class="exp-date">2022</div></div>
+                <div class="exp-desc">70.8% | First Division with Distinction | Supply Chain & IT Strategy</div>
+            </div>
+            <div class="edu-item">
+                <div class="exp-header"><div><span class="exp-title">BCA / BBA(CA) – Computer Applications</span> <span class="exp-company">SPPU</span></div><div class="exp-date">2018</div></div>
+                <div class="exp-desc">62.42% | Programming, Database, Networking, System Analysis</div>
+            </div>
+        </div>
+
+        <!-- Projects Tab -->
+        <div class="tab-pane" id="projects">
+            <div class="section-title"><i class="fas fa-microchip"></i> Key Projects</div>
+            <div class="project-grid">
+                <div class="project-card"><i class="fas fa-database"></i><h3>GIT-BITS-INFRA</h3><ul><li>SQL queries, stored procedures, jobs</li><li>IAM, log shipping, replication</li><li>SQL Server installation & config</li></ul></div>
+                <div class="project-card"><i class="fas fa-chart-line"></i><h3>Problem Management Hub</h3><ul><li>Power BI dashboards & RCA reports</li><li>Collaboration with Incident/Change teams</li><li>Known error database enhancement</li></ul></div>
+                <div class="project-card"><i class="fas fa-shield-alt"></i><h3>Identity & Access Management</h3><ul><li>Active Directory & Azure AD</li><li>IAM governance, Intune MDM</li><li>Endpoint security compliance</li></ul></div>
+            </div>
+        </div>
+
+        <!-- Wall Tab -->
+        <div class="tab-pane" id="wall">
+            <div class="section-title"><i class="fas fa-th-large"></i> Achievement Wall</div>
+            <div class="wall-grid">
+                <div class="wall-card"><div class="wall-icon"><i class="fas fa-trophy"></i></div><div class="wall-title">20% Reduction in Major Incidents</div><div class="wall-desc">Proactive RCA & problem management at HCL.</div></div>
+                <div class="wall-card"><div class="wall-icon"><i class="fas fa-chart-pie"></i></div><div class="wall-title">Power BI Automation</div><div class="wall-desc">KPI dashboards for leadership.</div></div>
+                <div class="wall-card"><div class="wall-icon"><i class="fab fa-microsoft"></i></div><div class="wall-title">2x Microsoft Certified</div><div class="wall-desc">Power BI + Azure DB Associate.</div></div>
+                <div class="wall-card"><div class="wall-icon"><i class="fas fa-users"></i></div><div class="wall-title">Cross-functional Leadership</div><div class="wall-desc">Led RCA workshops & problem reviews.</div></div>
+            </div>
+        </div>
+
+        <!-- Contact Tab -->
+        <div class="tab-pane" id="contact">
+            <div class="section-title"><i class="fas fa-paper-plane"></i> Let's Connect</div>
+            <div style="text-align:center">
+                <p>🚀 2x Microsoft Certified | Open to remote/hybrid/full-time roles.</p>
+                <div class="contact-buttons">
+                    <a href="mailto:gaikwadpd24@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://www.linkedin.com/in/pravin-gaikwad-1aa158193" target="_blank" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+                <div style="margin-top:0.8rem; font-size:0.75rem;">Immediate joiner | 6+ years | ITIL aligned</div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- SKILLS SECTION -->
-  <section>
-    <div class="section-title">
-      <h2>Technical Arsenal & Core Competencies</h2>
-    </div>
-    <div class="card" style="padding: 1.2rem;">
-      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-        <span class="skill-tag">Problem Management (ITIL)</span>
-        <span class="skill-tag">Incident Management</span>
-        <span class="skill-tag">Major Incident Handling & RCA</span>
-        <span class="skill-tag">Root Cause Analysis</span>
-        <span class="skill-tag">Continual Service Improvement (CSI)</span>
-        <span class="skill-tag">IT Asset Management</span>
-        <span class="skill-tag">ServiceNow – Incident/Problem</span>
-        <span class="skill-tag">SLA Management & Communication</span>
-        <span class="skill-tag">Cross-functional Collaboration</span>
-        <span class="skill-tag">KPI Reporting & Trend Analysis</span>
-        <span class="skill-tag">Tableau, Power BI & Excel Dashboards</span>
-        <span class="skill-tag">SQL Server & Azure SQL DBA</span>
-        <span class="skill-tag">Python (Pandas, NumPy)</span>
-        <span class="skill-tag">MATLAB</span>
-        <span class="skill-tag">Windows & Server OS (2012-2019)</span>
-        <span class="skill-tag">Active Directory / Azure AD</span>
-        <span class="skill-tag">Microsoft Intune / MDM</span>
-        <span class="skill-tag">Exchange Online / Office 365</span>
-        <span class="skill-tag">Virtual Desktop Infrastructure</span>
-        <span class="skill-tag">Endpoint Security</span>
-        <span class="skill-tag">Change & Escalation Management</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- WORK EXPERIENCE -->
-  <section>
-    <div class="section-title">
-      <i class="fas fa-briefcase"></i>
-      <h2>Professional Journey</h2>
-    </div>
-    <div class="card">
-      <div class="exp-item">
-        <div class="exp-header"><div><span class="exp-title">Senior Analyst</span> <span class="exp-company"> @ HCL Technologies Ltd</span></div><div class="exp-date">Jan 2022 – Present</div></div>
-        <div class="exp-desc"><ul><li>Lead end-to-end Problem Management lifecycle ensuring timely root cause identification and resolution.</li><li>Analyze incident trends, conduct RCA workshops, and facilitate problem review meetings.</li><li>Implement preventive solutions – reduced recurring major incidents by 20% year-over-year.</li><li>Maintain known error records, workarounds, and documentation within ServiceNow.</li><li>Collaborate with Incident, Change, and Infrastructure teams to align preventive and corrective actions.</li><li>Prepare KPI dashboards, trend analysis reports, and management presentations using Power BI and Excel.</li><li>Conduct impact assessments and manage stakeholder communication during critical incidents.</li><li>Support IT asset tracking, reporting, and lifecycle management for operational compliance.</li></ul></div>
-      </div>
-      <div class="exp-item">
-        <div class="exp-header"><div><span class="exp-title">Desktop Support Engineer</span> <span class="exp-company"> @ IMSI Staffing Pvt Ltd</span></div><div class="exp-date">Apr 2019 – Oct 2021</div></div>
-        <div class="exp-desc"><ul><li>Provided Level 1/2 IT support and managed high-priority incidents.</li><li>Collaborated with infrastructure teams to escalate and resolve issues.</li><li>Maintained tickets and ensured SLA compliance; performed system installations, AD management.</li></ul></div>
-      </div>
-      <div class="exp-item">
-        <div class="exp-header"><div><span class="exp-title">System Administrator</span> <span class="exp-company"> @ S.M. Joshi College</span></div><div class="exp-date">May 2018 – Apr 2019</div></div>
-        <div class="exp-desc"><ul><li>Administered campus IT infrastructure: Windows Server, Active Directory, firewall config, network troubleshooting.</li><li>Provided technical support, system monitoring, and ensured smooth IT operations.</li></ul></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CERTIFICATION BADGES -->
-  <section>
-    <div class="section-title"><i class="fab fa-microsoft"></i><h2>Microsoft Certifications – Official Badges</h2></div>
-    <div class="grid-2">
-      <div class="cert-badge-img"><img src="powerbi-cert.png" alt="Power BI" onerror="this.src='https://placehold.co/300x150?text=Power+BI+Badge';"><p style="margin-top:8px; font-weight:500;">PL-300: Power BI Data Analyst Associate</p></div>
-      <div class="cert-badge-img"><img src="azure-cert.png" alt="Azure DB" onerror="this.src='https://placehold.co/300x150?text=Azure+DB+Badge';"><p style="margin-top:8px; font-weight:500;">DP-300: Azure Database Administrator Associate</p></div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section>
-    <div class="section-title"><i class="fas fa-graduation-cap"></i><h2>Academic Excellence & Credentials</h2></div>
-    <div class="grid-2">
-      <div class="card"><div class="edu-card"><div class="edu-degree"><i class="fas fa-university"></i> MBA / PGDM – Operations Management</div><div>Savitribai Phule Pune University</div><div class="edu-marks">🏆 Marks: 70.8% | First Division</div><div style="font-size:0.85rem; margin-top:8px;">2022</div></div><div class="edu-card"><div class="edu-degree"><i class="fas fa-laptop-code"></i> BCA / BBA(CA) – Computer Applications</div><div>Savitribai Phule Pune University</div><div class="edu-marks">🎓 Marks: 62.42%</div><div style="font-size:0.85rem; margin-top:8px;">2018</div></div></div>
-      <div class="card"><h3 style="font-weight:700; margin-bottom:1rem;"><i class="fas fa-id-card"></i> Additional Information</h3><div><i class="fas fa-language"></i> <strong>Languages:</strong> Marathi, English, Hindi</div><hr style="margin:1rem 0;"><div><i class="fas fa-tasks"></i> <strong>ITSM:</strong> ServiceNow, Power BI, SQL, Major Incident Management</div><div style="margin-top:1rem;"><i class="fas fa-certificate"></i> <strong>Microsoft Certified:</strong> Azure Database Administrator & Power BI Data Analyst</div></div>
-    </div>
-  </section>
-
-  <!-- SOFT SKILLS -->
-  <section><div class="section-title"><i class="fas fa-heart"></i><h2>Soft Skills</h2></div><div class="card" style="text-align:center;"><div><span class="soft-skill">🧠 Analytical thinker & process improvement mindset</span><span class="soft-skill">🗣️ Strong communication & stakeholder engagement</span><span class="soft-skill">🤝 Collaborative team leader & mentor</span><span class="soft-skill">⚡ Adaptable to evolving technology landscapes</span></div></div></section>
-
-  <!-- PROJECTS -->
-  <section><div class="section-title"><i class="fas fa-microchip"></i><h2>Key Projects & Technical Contributions</h2></div><div class="grid-2"><div class="project-card"><i class="fas fa-database" style="font-size:1.8rem; color:#0f52ba;"></i><h3>GIT-BITS-INFRA (SQL & IAM)</h3><ul><li>Created/modified SQL queries, stored procedures, jobs.</li><li>Managed master data, implemented IAM.</li><li>Monitored log shipping, replication.</li><li>Installed/configured SQL Server.</li></ul></div><div class="project-card"><i class="fas fa-chart-line" style="font-size:1.8rem; color:#0f52ba;"></i><h3>Problem Management Intelligence Hub</h3><ul><li>Built Power BI dashboards & RCA reports.</li><li>Collaborated with Incident/Change teams.</li><li>Enhanced known error database.</li></ul></div></div></section>
-
-  <!-- INFRASTRUCTURE & SECURITY -->
-  <section><div class="section-title"><i class="fas fa-shield-alt"></i><h2>Infrastructure & Security Excellence</h2></div><div class="grid-3"><div class="card"><i class="fas fa-users-cog"></i><h3>Identity & Access Mgmt</h3><p>Active Directory, Azure AD, IAM, Intune MDM.</p></div><div class="card"><i class="fas fa-chalkboard-teacher"></i><h3>Major Incident & Escalation</h3><p>Led bridges, stakeholder communication.</p></div><div class="card"><i class="fas fa-chart-simple"></i><h3>Data Driven IT Ops</h3><p>Power BI, SQL analytics.</p></div></div></section>
-
-  <!-- CONTACT SECTION (no extra download buttons) -->
-  <section id="contact">
-    <div class="section-title"><i class="fas fa-paper-plane"></i><h2>Let’s Connect – Open to Opportunities</h2></div>
-    <div class="card" style="text-align:center; background:linear-gradient(115deg,#ffffff,#f9fcff);">
-      <p style="margin-bottom:1rem;">🚀 Passionate about IT Operations, Problem Management & Infrastructure excellence.</p>
-      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;">
-        <a href="mailto:gaikwadpd24@gmail.com" class="btn-outline" style="background:#0f52ba; color:white; border:none;"><i class="fas fa-envelope"></i> gaikwadpd24@gmail.com</a>
-        <a href="tel:+918177816241" class="btn-outline"><i class="fas fa-phone-alt"></i> +91-8177816241</a>
-        <a href="https://www.linkedin.com/in/pravin-gaikwad-1aa158193" target="_blank" class="btn-outline"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
-      </div>
-      <div style="margin-top:1.2rem;">
-        <i class="fas fa-map-marker-alt"></i> Pune, India | Open for remote/hybrid/onsite roles.
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Pravin Gaikwad – Professional portfolio. Ready to drive impact.</p>
-  </footer>
+    <footer>
+        <p>© 2026 Pravin Gaikwad – Senior Analyst | Problem Management | IT Operations | 2x Microsoft Certified</p>
+    </footer>
 </div>
+
+<script>
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const panes = document.querySelectorAll('.tab-pane');
+
+    function switchTab(tabId) {
+        panes.forEach(p => p.classList.remove('active-pane'));
+        document.getElementById(tabId).classList.add('active-pane');
+        tabBtns.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('data-tab') === tabId) btn.classList.add('active');
+        });
+        document.querySelector('.tab-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tabId = btn.getAttribute('data-tab');
+            switchTab(tabId);
+        });
+    });
+</script>
 </body>
 </html>
