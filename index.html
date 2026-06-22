@@ -4,30 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-    <!-- ===== PRIMARY SEO META TAGS ===== -->
-    <title>Pravin Gaikwad | Senior Analyst | Power BI | Azure Certified</title>
+    <title>Pravin Gaikwad | Senior Analyst | IT Operations | Power BI</title>
     <meta name="description" content="Senior Analyst with 6+ years in Problem Management, IT Operations, and Data Analytics. 2x Microsoft Certified: Power BI & Azure Database Administrator. View portfolio, projects & certifications.">
-    <meta name="keywords" content="Senior Analyst, Problem Management, IT Operations, Root Cause Analysis, ITIL, ServiceNow, Power BI, Azure, SQL Server, Active Directory, Intune, Office 365, Tableau, Data Analytics, Microsoft Certified, Pune, India">
+    <meta name="keywords" content="Senior Analyst, Problem Management, IT Operations, Data Analyst, Root Cause Analysis, ITIL, ServiceNow, Power BI, Azure, SQL Server, Active Directory, Intune, Office 365, Tableau, Data Analytics, Microsoft Certified, Pune, India">
     <meta name="author" content="Pravin Gaikwad">
     <meta name="robots" content="index, follow">
 
-    <!-- ===== OPEN GRAPH (OG) TAGS FOR SOCIAL MEDIA ===== -->
-    <meta property="og:title" content="Pravin Gaikwad | Senior Analyst | Power BI | Azure Certified">
-    <meta property="og:description" content="Senior Analyst with 6+ years in IT Operations, Problem Management, and Data Analytics. Microsoft Certified: Power BI & Azure Database Administrator. View my portfolio, projects, and certifications.">
+    <meta property="og:title" content="Pravin Gaikwad | Senior Analyst | IT Operations | Power BI">
+    <meta property="og:description" content="Senior Analyst with 6+ years in IT Operations, Problem Management, and Data Analytics. Microsoft Certified: Power BI & Azure Database Administrator.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://praving.com/">
     <meta property="og:image" content="https://praving.com/og-image.jpg">
 
-    <!-- ===== TWITTER CARD TAGS ===== -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pravin Gaikwad | Senior Analyst | Power BI | Azure Certified">
+    <meta name="twitter:title" content="Pravin Gaikwad | Senior Analyst | IT Operations | Power BI">
     <meta name="twitter:description" content="Senior Analyst with 6+ years in IT Operations, Problem Management, and Data Analytics. Microsoft Certified: Power BI & Azure Database Administrator.">
     <meta name="twitter:image" content="https://praving.com/og-image.jpg">
 
-    <!-- ===== CANONICAL URL ===== -->
     <link rel="canonical" href="https://praving.com/">
 
-    <!-- ===== SCHEMA MARKUP (Structured Data) ===== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
@@ -35,45 +30,25 @@
       "name": "Pravin Gaikwad",
       "jobTitle": "Senior Analyst",
       "url": "https://praving.com/",
-      "sameAs": [
-        "https://www.linkedin.com/in/pravin-gaikwad-1aa158193"
-      ],
-      "knowsAbout": [
-        "Problem Management",
-        "IT Operations",
-        "Data Analytics",
-        "Power BI",
-        "Azure Database Administration",
-        "ITIL",
-        "Root Cause Analysis",
-        "SQL Server",
-        "Active Directory"
-      ],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "HCL Technologies"
-      }
+      "sameAs": ["https://www.linkedin.com/in/pravin-gaikwad-1aa158193"],
+      "knowsAbout": ["Problem Management", "IT Operations", "Data Analytics", "Power BI", "Azure Database Administration", "ITIL", "Root Cause Analysis", "SQL Server", "Active Directory"],
+      "worksFor": { "@type": "Organization", "name": "HCL Technologies" }
     }
     </script>
 
-    <!-- ===== FONTS & ICONS ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', sans-serif;
             background: #f1f5f9;
             color: #0f172a;
             line-height: 1.5;
+            scroll-behavior: smooth;
         }
 
         .container {
@@ -82,35 +57,38 @@
             background: white;
             border-radius: 28px;
             box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
-            display: flex;
-            flex-direction: column;
+            overflow: hidden;
         }
 
+        /* ===== PROFESSIONAL HEADER ===== */
         .header {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            padding: 1.5rem 2rem;
+            padding: 2rem 2.5rem;
             color: white;
-            border-radius: 28px 28px 0 0;
         }
 
-        .header-content {
+        .header-top {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
-            gap: 1rem;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .name-title h1 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 700;
             letter-spacing: -0.02em;
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.3rem;
+            line-height: 1.2;
         }
 
         .name-title .tagline {
-            font-size: 0.85rem;
+            font-size: 0.95rem;
             color: #94a3b8;
+            font-weight: 400;
+            letter-spacing: 0.3px;
         }
 
         .badge-group {
@@ -118,38 +96,51 @@
             flex-wrap: wrap;
             gap: 0.6rem;
             align-items: center;
+            padding-top: 0.2rem;
         }
 
-        .availability-badge, .cert-badge-header {
-            background: rgba(255,255,255,0.08);
+        .badge {
+            background: rgba(255,255,255,0.1);
             backdrop-filter: blur(4px);
-            padding: 0.4rem 0.9rem;
+            padding: 0.4rem 1rem;
             border-radius: 60px;
             font-size: 0.75rem;
-            border: 1px solid rgba(255,255,255,0.1);
+            font-weight: 500;
+            border: 1px solid rgba(255,255,255,0.12);
             display: inline-flex;
             align-items: center;
             gap: 6px;
+            color: #e2e8f0;
         }
 
-        .cert-badge-header i {
-            color: #ffc107;
+        .badge i {
+            font-size: 0.8rem;
+        }
+
+        .badge-gold i {
+            color: #fbbf24;
+        }
+
+        .badge-blue i {
+            color: #60a5fa;
         }
 
         .contact-strip {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 0.5rem;
-            font-size: 0.75rem;
+            gap: 1.5rem;
+            margin-top: 0.8rem;
+            padding-top: 0.8rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
         }
 
         .contact-strip a, .contact-strip span {
             display: inline-flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
             color: #cbd5e1;
             text-decoration: none;
+            font-size: 0.8rem;
             transition: color 0.2s;
         }
 
@@ -157,15 +148,26 @@
             color: #38bdf8;
         }
 
-        .tabs-nav {
-            display: flex;
-            flex-wrap: wrap;
-            background: #f8fafc;
-            border-bottom: 1px solid #e2e8f0;
-            padding: 0 1.5rem;
+        .contact-strip i {
+            font-size: 0.85rem;
+            color: #64748b;
+            width: 18px;
         }
 
-        .tab-btn {
+        /* ===== STICKY NAVIGATION ===== */
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(248, 250, 252, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #e2e8f0;
+            padding: 0 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+        }
+        .nav-link {
             background: transparent;
             border: none;
             padding: 0.8rem 1.2rem;
@@ -178,39 +180,14 @@
             align-items: center;
             gap: 6px;
             border-bottom: 2px solid transparent;
+            text-decoration: none;
         }
+        .nav-link i { font-size: 0.9rem; }
+        .nav-link:hover { color: #0f52ba; background: #f1f5f9; }
+        .nav-link.active { color: #0f52ba; border-bottom-color: #0f52ba; }
 
-        .tab-btn i {
-            font-size: 0.9rem;
-        }
-
-        .tab-btn:hover {
-            color: #0f52ba;
-            background: #f1f5f9;
-        }
-
-        .tab-btn.active {
-            color: #0f52ba;
-            border-bottom-color: #0f52ba;
-        }
-
-        .tab-content {
-            padding: 2rem;
-        }
-
-        .tab-pane {
-            display: none;
-            animation: fadeIn 0.2s ease;
-        }
-
-        .tab-pane.active-pane {
-            display: block;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(5px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        .main-content { padding: 2rem; }
+        section { margin-bottom: 3.5rem; scroll-margin-top: 80px; }
 
         .section-title {
             font-size: 1.3rem;
@@ -220,6 +197,7 @@
             padding-left: 0.8rem;
             color: #0f172a;
         }
+        .section-title i { color: #0f52ba; margin-right: 0.3rem; }
 
         .summary-card {
             background: #f8fafc;
@@ -231,9 +209,8 @@
             font-size: 0.9rem;
         }
 
-        .skills-section {
-            margin-bottom: 1.5rem;
-        }
+        /* ===== SKILLS SECTION ===== */
+        .skills-section { margin-bottom: 1.5rem; }
         .skills-subtitle {
             font-size: 1rem;
             font-weight: 600;
@@ -243,23 +220,30 @@
             border-bottom: 2px solid #e2e8f0;
             display: inline-block;
         }
+        .skills-subtitle i { margin-right: 0.4rem; }
         .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-            gap: 0.6rem;
-            margin-bottom: 1.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
         }
         .skill-tag {
             background: #f1f5f9;
-            padding: 0.4rem 1rem;
-            border-radius: 40px;
-            font-size: 0.8rem;
+            padding: 10px 16px;
+            border-radius: 50px;
+            font-size: 14px;
             font-weight: 500;
             color: #0f172a;
             border: 1px solid #e2e8f0;
             transition: all 0.2s;
-            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
             white-space: nowrap;
+        }
+        .skill-tag i {
+            font-size: 0.75rem;
+            color: #0f52ba;
+            transition: color 0.2s;
         }
         .skill-tag:hover {
             background: #0f52ba;
@@ -267,6 +251,7 @@
             transform: translateY(-2px);
             border-color: #0f52ba;
         }
+        .skill-tag:hover i { color: white; }
 
         .exp-item, .edu-item, .cert-item {
             background: white;
@@ -274,8 +259,11 @@
             border-radius: 16px;
             margin-bottom: 1rem;
             border: 1px solid #e2e8f0;
+            transition: all 0.2s;
         }
-
+        .exp-item:hover, .edu-item:hover, .cert-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
         .exp-header, .edu-header {
             display: flex;
             flex-wrap: wrap;
@@ -283,18 +271,8 @@
             align-items: baseline;
             margin-bottom: 0.4rem;
         }
-
-        .exp-title, .edu-title {
-            font-size: 1rem;
-            font-weight: 700;
-            color: #0f172a;
-        }
-
-        .exp-company, .edu-institution {
-            font-weight: 600;
-            color: #0f52ba;
-        }
-
+        .exp-title, .edu-title { font-size: 1rem; font-weight: 700; color: #0f172a; }
+        .exp-company, .edu-institution { font-weight: 600; color: #0f52ba; }
         .exp-date, .edu-date {
             font-size: 0.65rem;
             background: #f1f5f9;
@@ -303,18 +281,8 @@
             font-weight: 500;
             color: #475569;
         }
-
-        .exp-desc {
-            color: #475569;
-            font-size: 0.8rem;
-            line-height: 1.5;
-            margin-top: 0.3rem;
-        }
-
-        .exp-desc ul {
-            padding-left: 1rem;
-            margin-top: 0.2rem;
-        }
+        .exp-desc { color: #475569; font-size: 0.8rem; line-height: 1.5; margin-top: 0.3rem; }
+        .exp-desc ul { padding-left: 1rem; margin-top: 0.2rem; }
 
         .cert-badge {
             display: flex;
@@ -322,82 +290,113 @@
             gap: 0.8rem;
             margin-bottom: 0.8rem;
         }
-
-        .cert-badge-img {
-            width: 45px;
-            height: 45px;
-            object-fit: contain;
-        }
-
-        .cert-title {
-            font-weight: 700;
-            font-size: 0.85rem;
-        }
-
-        .cert-detail {
-            font-size: 0.7rem;
-            color: #64748b;
-        }
+        .cert-badge:last-child { margin-bottom: 0; }
+        .cert-badge-img { width: 45px; height: 45px; object-fit: contain; }
+        .cert-title { font-weight: 700; font-size: 0.85rem; }
+        .cert-detail { font-size: 0.7rem; color: #64748b; }
 
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 1rem;
         }
-
         .project-card {
             background: #f8fafc;
             padding: 1rem;
             border-radius: 16px;
             border: 1px solid #e2e8f0;
+            transition: all 0.2s;
         }
-
-        .project-card h3 {
-            font-size: 0.9rem;
-            margin: 0.6rem 0 0.4rem;
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px -8px rgba(0,0,0,0.08);
         }
-
-        .project-card i {
-            font-size: 1.4rem;
-            color: #0f52ba;
-        }
+        .project-card h3 { font-size: 0.9rem; margin: 0.6rem 0 0.4rem; }
+        .project-card i { font-size: 1.4rem; color: #0f52ba; }
+        .project-card ul { font-size: 0.8rem; color: #475569; padding-left: 1rem; }
 
         .wall-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
             gap: 1rem;
         }
-
         .wall-card {
             background: #ffffff;
             border-radius: 16px;
             border: 1px solid #e2e8f0;
             padding: 1rem;
+            transition: all 0.2s;
+        }
+        .wall-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px -8px rgba(0,0,0,0.08);
+        }
+        .wall-icon { font-size: 1.6rem; color: #0f52ba; margin-bottom: 0.5rem; }
+        .wall-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 0.2rem; }
+        .wall-desc { font-size: 0.75rem; color: #475569; }
+
+        /* ===== PROFESSIONAL CONTACT SECTION ===== */
+        .contact-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
         }
 
-        .wall-icon {
-            font-size: 1.6rem;
-            color: #0f52ba;
-            margin-bottom: 0.5rem;
+        .contact-headline {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 0.25rem;
         }
 
-        .wall-title {
-            font-weight: 700;
-            font-size: 0.9rem;
-            margin-bottom: 0.2rem;
-        }
-
-        .wall-desc {
-            font-size: 0.75rem;
+        .contact-subheadline {
             color: #475569;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-links-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-links-grid .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: #0f172a;
+        }
+
+        .contact-links-grid .contact-item i {
+            color: #0f52ba;
+            width: 20px;
+            font-size: 1rem;
+        }
+
+        .contact-links-grid .contact-item a {
+            color: #0f52ba;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .contact-links-grid .contact-item a:hover {
+            color: #0a3d8c;
+            text-decoration: underline;
         }
 
         .contact-buttons {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.8rem;
-            margin: 1rem 0;
             justify-content: center;
+            gap: 0.8rem;
+            margin-bottom: 1.2rem;
         }
 
         .btn {
@@ -412,11 +411,37 @@
             font-size: 0.8rem;
             color: #0f52ba;
             text-decoration: none;
+            transition: all 0.2s;
+        }
+        .btn:hover { background: #0f52ba; color: white; transform: translateY(-2px); }
+        .btn-primary { background: #0f52ba; color: white; }
+        .btn-primary:hover { background: #0a3d8c; }
+
+        .availability-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.6rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
         }
 
-        .btn-primary {
-            background: #0f52ba;
-            color: white;
+        .availability-tag {
+            background: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #475569;
+            border: 1px solid #e2e8f0;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .availability-tag i {
+            color: #0f52ba;
+            font-size: 0.7rem;
         }
 
         footer {
@@ -426,83 +451,63 @@
             font-size: 0.75rem;
             color: #64748b;
             background: white;
-            border-radius: 0 0 28px 28px;
         }
 
         @media (max-width: 700px) {
-            .container {
-                margin: 1rem;
-                border-radius: 20px;
-            }
-            .header {
-                padding: 1rem;
-                border-radius: 20px 20px 0 0;
-            }
-            .name-title h1 {
-                font-size: 1.4rem;
-            }
-            .tabs-nav {
-                padding: 0 0.5rem;
-                overflow-x: auto;
-                white-space: nowrap;
-                flex-wrap: nowrap;
-            }
-            .tab-btn {
-                padding: 0.6rem 0.8rem;
-                font-size: 0.75rem;
-            }
-            .tab-content {
-                padding: 1rem;
-            }
-            .skills-grid {
-                grid-template-columns: repeat(auto-fill, minmax(150px, auto));
-            }
-            .skill-tag {
-                white-space: normal;
-                text-align: center;
-                font-size: 0.7rem;
-                padding: 0.3rem 0.7rem;
-            }
+            .container { margin: 1rem; border-radius: 20px; }
+            .header { padding: 1.2rem; }
+            .name-title h1 { font-size: 1.5rem; }
+            .header-top { flex-direction: column; align-items: flex-start; }
+            .sticky-nav { padding: 0 0.5rem; overflow-x: auto; white-space: nowrap; flex-wrap: nowrap; }
+            .nav-link { padding: 0.6rem 0.8rem; font-size: 0.75rem; }
+            .main-content { padding: 1rem; }
+            .skill-tag { font-size: 0.75rem; padding: 6px 12px; white-space: normal; }
+            .contact-strip { gap: 0.8rem; }
+            .contact-links-grid { gap: 1rem; flex-direction: column; align-items: center; }
+            .contact-card { padding: 1.2rem; }
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <!-- Header -->
+    <!-- ===== PROFESSIONAL HEADER ===== -->
     <div class="header">
-        <div class="header-content">
+        <div class="header-top">
             <div class="name-title">
-                <h1>Pravin Gaikwad – Senior Analyst | Problem Management | IT Operations</h1>
-                <div class="tagline">Senior Analyst | Problem Management | IT Operations</div>
-                <div class="contact-strip">
-                    <a href="tel:+918177816241"><i class="fas fa-phone-alt"></i> +91-8177816241</a>
-                    <a href="mailto:gaikwadpd24@gmail.com"><i class="fas fa-envelope"></i> gaikwadpd24@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/pravin-gaikwad-1aa158193" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <span><i class="fas fa-map-marker-alt"></i> Pune, India</span>
-                </div>
+                <h1>Pravin Gaikwad</h1>
+                <div class="tagline">Senior Analyst | IT Operations | Data Analyst</div>
             </div>
             <div class="badge-group">
-                <div class="availability-badge"><i class="fas fa-bolt"></i> Immediate | 6+ Years</div>
-                <div class="cert-badge-header"><i class="fas fa-certificate"></i> 2x Microsoft Certified</div>
+                <span class="badge badge-blue"><i class="fas fa-bolt"></i> Immediate Joiner</span>
+                <span class="badge badge-blue"><i class="fas fa-clock"></i> 6+ Years Experience</span>
+                <span class="badge badge-gold"><i class="fas fa-certificate"></i> 2x Microsoft Certified</span>
             </div>
+        </div>
+
+        <div class="contact-strip">
+            <a href="tel:+918177816241"><i class="fas fa-phone-alt"></i> +91-8177816241</a>
+            <a href="mailto:gaikwadpd24@gmail.com"><i class="fas fa-envelope"></i> gaikwadpd24@gmail.com</a>
+            <a href="https://www.linkedin.com/in/pravin-gaikwad-1aa158193" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <span><i class="fas fa-map-marker-alt"></i> Pune, India</span>
         </div>
     </div>
 
-    <!-- Tab Navigation -->
-    <div class="tabs-nav">
-        <button class="tab-btn active" data-tab="about"><i class="fas fa-user"></i> About</button>
-        <button class="tab-btn" data-tab="skills"><i class="fas fa-code"></i> Skills</button>
-        <button class="tab-btn" data-tab="experience"><i class="fas fa-briefcase"></i> Experience</button>
-        <button class="tab-btn" data-tab="certifications"><i class="fab fa-microsoft"></i> Certifications</button>
-        <button class="tab-btn" data-tab="education"><i class="fas fa-graduation-cap"></i> Education</button>
-        <button class="tab-btn" data-tab="projects"><i class="fas fa-microchip"></i> Projects</button>
-        <button class="tab-btn" data-tab="wall"><i class="fas fa-th-large"></i> Wall</button>
-        <button class="tab-btn" data-tab="contact"><i class="fas fa-paper-plane"></i> Contact</button>
-    </div>
+    <!-- ===== STICKY NAVIGATION ===== -->
+    <nav class="sticky-nav" id="navbar">
+        <a href="#about" class="nav-link active"><i class="fas fa-user"></i> About</a>
+        <a href="#skills" class="nav-link"><i class="fas fa-laptop-code"></i> Skills</a>
+        <a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="#certifications" class="nav-link"><i class="fab fa-microsoft"></i> Certifications</a>
+        <a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a>
+        <a href="#projects" class="nav-link"><i class="fas fa-microchip"></i> Projects</a>
+        <a href="#wall" class="nav-link"><i class="fas fa-th-large"></i> Wall</a>
+        <a href="#contact" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a>
+    </nav>
 
-    <div class="tab-content">
-        <!-- About Tab - SEO Optimized -->
-        <div class="tab-pane active-pane" id="about">
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="main-content">
+        <!-- About -->
+        <section id="about">
             <div class="section-title"><i class="fas fa-user"></i> About Me</div>
             <div class="summary-card">
                 Strategic IT professional with <strong>6+ years of experience</strong> in <strong>incident management, problem management, and data analytics</strong>. Proven expertise in <strong>root cause analysis (RCA)</strong>, problem lifecycle, and preventive measures. Adept in <strong>ITIL processes</strong>, stakeholder communication, and continual service improvement (CSI). Strong technical foundation in data platforms (<strong>SQL, Azure</strong>), visualization tools (<strong>Power BI, Tableau</strong>), and IT infrastructure (<strong>Active Directory, Intune, Office 365</strong>). <strong>2x Microsoft Certified</strong> (Power BI Data Analyst & Azure Database Administrator).
@@ -510,62 +515,67 @@
             <div class="summary-card" style="margin-top: 0.8rem;">
                 <i class="fas fa-chart-line" style="color: #0f52ba; margin-right: 0.5rem;"></i> <strong>Key Impact:</strong> Reduced recurring major incidents by 20% YoY, built automated Power BI dashboards for RCA trends, led cross-functional problem review meetings.
             </div>
-        </div>
+        </section>
 
-        <!-- Skills Tab -->
-        <div class="tab-pane" id="skills">
-            <div class="section-title"><i class="fas fa-code"></i> Technical Arsenal & Core Competencies</div>
+        <!-- Skills -->
+        <section id="skills">
+            <div class="section-title"><i class="fas fa-laptop-code"></i> Skills & Technologies</div>
+
             <div class="skills-section">
                 <div class="skills-subtitle"><i class="fas fa-tasks"></i> IT Service Management</div>
                 <div class="skills-grid">
-                    <span class="skill-tag">Problem Management (ITIL)</span>
-                    <span class="skill-tag">Incident Management</span>
-                    <span class="skill-tag">Major Incident Handling & RCA</span>
-                    <span class="skill-tag">Root Cause Analysis</span>
-                    <span class="skill-tag">Continual Service Improvement (CSI)</span>
-                    <span class="skill-tag">IT Asset Management</span>
-                    <span class="skill-tag">ServiceNow – Incident/Problem</span>
-                    <span class="skill-tag">SLA Management</span>
-                    <span class="skill-tag">Change & Escalation Management</span>
-                    <span class="skill-tag">Vendor Management</span>
-                    <span class="skill-tag">Stakeholder Management</span>
+                    <span class="skill-tag"><i class="fas fa-exclamation-triangle"></i> Problem Management</span>
+                    <span class="skill-tag"><i class="fas fa-bell"></i> Incident Management</span>
+                    <span class="skill-tag"><i class="fas fa-fire"></i> Major Incident Management</span>
+                    <span class="skill-tag"><i class="fas fa-search"></i> Root Cause Analysis (RCA)</span>
+                    <span class="skill-tag"><i class="fas fa-cloud"></i> ServiceNow</span>
+                    <span class="skill-tag"><i class="fas fa-book"></i> ITIL Framework</span>
+                    <span class="skill-tag"><i class="fas fa-exchange-alt"></i> Change Management</span>
+                    <span class="skill-tag"><i class="fas fa-handshake"></i> SLA Management</span>
                 </div>
             </div>
-            <div class="skills-section">
-                <div class="skills-subtitle"><i class="fas fa-chart-line"></i> Data & Analytics</div>
-                <div class="skills-grid">
-                    <span class="skill-tag">Power BI</span>
-                    <span class="skill-tag">Tableau</span>
-                    <span class="skill-tag">Excel Dashboards</span>
-                    <span class="skill-tag">KPI Reporting & Trend Analysis</span>
-                    <span class="skill-tag">SQL Server</span>
-                    <span class="skill-tag">Azure SQL DBA</span>
-                    <span class="skill-tag">Python (Pandas, NumPy)</span>
-                    <span class="skill-tag">MATLAB</span>
-                </div>
-            </div>
-            <div class="skills-section">
-                <div class="skills-subtitle"><i class="fas fa-shield-alt"></i> Infrastructure & Security</div>
-                <div class="skills-grid">
-                    <span class="skill-tag">Active Directory / Azure AD</span>
-                    <span class="skill-tag">Microsoft Intune / MDM</span>
-                    <span class="skill-tag">Exchange Online / Office 365</span>
-                    <span class="skill-tag">Virtual Desktop Infrastructure (VDI)</span>
-                    <span class="skill-tag">Endpoint Security</span>
-                    <span class="skill-tag">Windows & Server OS (2012-2019)</span>
-                </div>
-            </div>
-            <div class="skills-section">
-                <div class="skills-subtitle"><i class="fas fa-tools"></i> Other Competencies</div>
-                <div class="skills-grid">
-                    <span class="skill-tag">Cross-functional Collaboration</span>
-                    <span class="skill-tag">IT Operations Management</span>
-                </div>
-            </div>
-        </div>
 
-        <!-- Experience Tab -->
-        <div class="tab-pane" id="experience">
+            <div class="skills-section">
+                <div class="skills-subtitle"><i class="fas fa-chart-line"></i> Data Analytics & Reporting</div>
+                <div class="skills-grid">
+                    <span class="skill-tag"><i class="fas fa-chart-pie"></i> Power BI</span>
+                    <span class="skill-tag"><i class="fas fa-database"></i> SQL Server</span>
+                    <span class="skill-tag"><i class="fas fa-cloud-upload-alt"></i> Azure SQL</span>
+                    <span class="skill-tag"><i class="fas fa-chart-bar"></i> Tableau</span>
+                    <span class="skill-tag"><i class="fas fa-file-excel"></i> Advanced Excel</span>
+                    <span class="skill-tag"><i class="fas fa-chart-simple"></i> KPI Reporting</span>
+                    <span class="skill-tag"><i class="fas fa-arrow-trend-up"></i> Trend Analysis</span>
+                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <div class="skills-subtitle"><i class="fas fa-cloud"></i> Infrastructure & Cloud</div>
+                <div class="skills-grid">
+                    <span class="skill-tag"><i class="fas fa-users-cog"></i> Active Directory</span>
+                    <span class="skill-tag"><i class="fab fa-microsoft"></i> Azure AD</span>
+                    <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Microsoft Intune</span>
+                    <span class="skill-tag"><i class="fas fa-envelope"></i> Office 365</span>
+                    <span class="skill-tag"><i class="fab fa-windows"></i> Windows Server</span>
+                    <span class="skill-tag"><i class="fas fa-desktop"></i> VDI</span>
+                    <span class="skill-tag"><i class="fas fa-shield-alt"></i> Endpoint Security</span>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <div class="skills-subtitle"><i class="fas fa-users"></i> Leadership & Operations</div>
+                <div class="skills-grid">
+                    <span class="skill-tag"><i class="fas fa-users"></i> Stakeholder Management</span>
+                    <span class="skill-tag"><i class="fas fa-building"></i> Vendor Management</span>
+                    <span class="skill-tag"><i class="fas fa-cogs"></i> IT Operations</span>
+                    <span class="skill-tag"><i class="fas fa-arrow-up"></i> Process Improvement</span>
+                    <span class="skill-tag"><i class="fas fa-handshake"></i> Cross-functional Collaboration</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
             <div class="section-title"><i class="fas fa-briefcase"></i> Professional Journey</div>
             <div class="exp-item">
                 <div class="exp-header">
@@ -588,10 +598,10 @@
                 </div>
                 <div class="exp-desc"><ul><li>Windows Server, firewall, network troubleshooting, user support, system monitoring.</li></ul></div>
             </div>
-        </div>
+        </section>
 
-        <!-- Certifications Tab -->
-        <div class="tab-pane" id="certifications">
+        <!-- Certifications -->
+        <section id="certifications">
             <div class="section-title"><i class="fab fa-microsoft"></i> Microsoft Certifications (2x)</div>
             <div class="cert-item">
                 <div class="cert-badge">
@@ -603,10 +613,10 @@
                     <div><div class="cert-title">Azure Database Administrator Associate</div><div class="cert-detail">DP-300 | Azure SQL, security, tuning</div></div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Education Tab -->
-        <div class="tab-pane" id="education">
+        <!-- Education -->
+        <section id="education">
             <div class="section-title"><i class="fas fa-graduation-cap"></i> Academic Excellence</div>
             <div class="edu-item">
                 <div class="exp-header"><div><span class="exp-title">MBA / PGDM – Operations Management</span> <span class="exp-company">SPPU</span></div><div class="exp-date">2022</div></div>
@@ -616,20 +626,20 @@
                 <div class="exp-header"><div><span class="exp-title">BCA / BBA(CA) – Computer Applications</span> <span class="exp-company">SPPU</span></div><div class="exp-date">2018</div></div>
                 <div class="exp-desc">62.42% | Programming, Database, Networking, System Analysis</div>
             </div>
-        </div>
+        </section>
 
-        <!-- Projects Tab -->
-        <div class="tab-pane" id="projects">
+        <!-- Projects -->
+        <section id="projects">
             <div class="section-title"><i class="fas fa-microchip"></i> Key Projects</div>
             <div class="project-grid">
                 <div class="project-card"><i class="fas fa-database"></i><h3>GIT-BITS-INFRA</h3><ul><li>SQL queries, stored procedures, jobs</li><li>IAM, log shipping, replication</li><li>SQL Server installation & config</li></ul></div>
                 <div class="project-card"><i class="fas fa-chart-line"></i><h3>Problem Management Hub</h3><ul><li>Power BI dashboards & RCA reports</li><li>Collaboration with Incident/Change teams</li><li>Known error database enhancement</li></ul></div>
                 <div class="project-card"><i class="fas fa-shield-alt"></i><h3>Identity & Access Management</h3><ul><li>Active Directory & Azure AD</li><li>IAM governance, Intune MDM</li><li>Endpoint security compliance</li></ul></div>
             </div>
-        </div>
+        </section>
 
-        <!-- Wall Tab -->
-        <div class="tab-pane" id="wall">
+        <!-- Wall -->
+        <section id="wall">
             <div class="section-title"><i class="fas fa-th-large"></i> Achievement Wall</div>
             <div class="wall-grid">
                 <div class="wall-card"><div class="wall-icon"><i class="fas fa-trophy"></i></div><div class="wall-title">20% Reduction in Major Incidents</div><div class="wall-desc">Proactive RCA & problem management at HCL.</div></div>
@@ -637,45 +647,89 @@
                 <div class="wall-card"><div class="wall-icon"><i class="fab fa-microsoft"></i></div><div class="wall-title">2x Microsoft Certified</div><div class="wall-desc">Power BI + Azure DB Associate.</div></div>
                 <div class="wall-card"><div class="wall-icon"><i class="fas fa-users"></i></div><div class="wall-title">Cross-functional Leadership</div><div class="wall-desc">Led RCA workshops & problem reviews.</div></div>
             </div>
-        </div>
+        </section>
 
-        <!-- Contact Tab -->
-        <div class="tab-pane" id="contact">
-            <div class="section-title"><i class="fas fa-paper-plane"></i> Let's Connect</div>
-            <div style="text-align:center">
-                <p>🚀 2x Microsoft Certified | Open to remote/hybrid/full-time roles.</p>
-                <div class="contact-buttons">
-                    <a href="mailto:gaikwadpd24@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email</a>
-                    <a href="https://www.linkedin.com/in/pravin-gaikwad-1aa158193" target="_blank" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <!-- ===== PROFESSIONAL CONTACT SECTION ===== -->
+        <section id="contact">
+            <div class="section-title"><i class="fas fa-paper-plane"></i> Get In Touch</div>
+            <div class="contact-card">
+                <div class="contact-headline">Let's Work Together</div>
+                <div class="contact-subheadline">Senior Analyst | Immediate Joiner | Open to Remote & Hybrid Roles</div>
+
+                <div class="contact-links-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:gaikwadpd24@gmail.com">gaikwadpd24@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+918177816241">+91-8177816241</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/pravin-gaikwad-1aa158193" target="_blank">LinkedIn Profile</a>
+                    </div>
                 </div>
-                <div style="margin-top:0.8rem; font-size:0.75rem;">Immediate joiner | 6+ years | ITIL aligned</div>
-            </div>
-        </div>
-    </div>
 
-    <footer>
-        <p>© 2026 Pravin Gaikwad – Senior Analyst | Problem Management | IT Operations | 2x Microsoft Certified</p>
-    </footer>
+                <div class="contact-buttons">
+                    <a href="mailto:gaikwadpd24@gmail.com" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Email</a>
+                    <a href="https://www.linkedin.com/in/pravin-gaikwad-1aa158193" target="_blank" class="btn"><i class="fab fa-linkedin"></i> Connect on LinkedIn</a>
+                </div>
+
+                <div class="availability-tags">
+                    <span class="availability-tag"><i class="fas fa-clock"></i> Immediate Joiner</span>
+                    <span class="availability-tag"><i class="fas fa-briefcase"></i> 6+ Years Experience</span>
+                    <span class="availability-tag"><i class="fas fa-certificate"></i> 2x Microsoft Certified</span>
+                    <span class="availability-tag"><i class="fas fa-check-circle"></i> ITIL Aligned</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Pravin Gaikwad – Senior Analyst | IT Operations | Data Analyst | 2x Microsoft Certified</p>
+        </footer>
+    </div>
 </div>
 
 <script>
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const panes = document.querySelectorAll('.tab-pane');
+    // Scrollspy: highlight active nav link on scroll
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
 
-    function switchTab(tabId) {
-        panes.forEach(p => p.classList.remove('active-pane'));
-        document.getElementById(tabId).classList.add('active-pane');
-        tabBtns.forEach(btn => {
-            btn.classList.remove('active');
-            if (btn.getAttribute('data-tab') === tabId) btn.classList.add('active');
+    function updateActiveNav() {
+        let current = '';
+        const scrollY = window.scrollY;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                current = section.getAttribute('id');
+            }
         });
-        document.querySelector('.tab-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
     }
 
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const tabId = btn.getAttribute('data-tab');
-            switchTab(tabId);
+    window.addEventListener('scroll', updateActiveNav);
+    window.addEventListener('load', updateActiveNav);
+
+    // Smooth scroll for nav links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId && targetId !== '#') {
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
         });
     });
 </script>
